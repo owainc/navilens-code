@@ -1,0 +1,27 @@
+[package]
+name = "crc_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+arbitrary-int = { version = "2.2.0" }
+clap = { version = "4.6.7", features = ["derive"] }
+crc = { version = "3.4.0" }
+
+
+[lints.rust]
+future-incompatible = "deny"
+unsafe-code = "forbid"
+
+let-underscore-drop = "warn"
+missing-docs = "warn"
+unreachable-pub = "warn"
+unused-crate-dependencies = "warn"
+unused-lifetimes = "warn"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+match-wildcard-for-single-variants = "allow"
+must-use-candidate = "allow"
+wildcard-imports = "allow"
+new-without-default = "allow"
