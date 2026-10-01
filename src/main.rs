@@ -28,19 +28,19 @@ struct Cli {
 enum Command {
     /// Encode exactly six hexadecimal characters.
     Encode {
-        /// The 24-bit payload.
+        /// The 24-bit data payload in big-endian hexadecimal (6 characters).
         #[arg(value_name = "DATA", value_parser = parse_data)]
         data: u24,
     },
     /// Validate six data hex characters followed by four CRC hex characters.
     Decode {
-        /// The validated matrix.
-        #[arg(value_name = "MATRIX", value_parser = decode)]
+        /// The marker code in big-endian hexadecimal (10 characters), including its checksum.
+        #[arg(value_name = "CODE", value_parser = decode)]
         matrix: ModuleMatrix,
     },
     /// Validate 25 alphanumeric symbols, ignoring separators.
     Parse {
-        /// The validated matrix in display order.
+        /// The marker matrix in display order.
         #[arg(value_name = "MATRIX", value_parser = parse_matrix)]
         matrix: ModuleMatrix,
     },
