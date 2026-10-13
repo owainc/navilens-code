@@ -120,15 +120,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "217698eaf96b4a3f0bc4f3662aaa55bdf913cd54d7204591faa790070c6d0853"
 
 [[package]]
-name = "crc_test"
-version = "0.1.0"
-dependencies = [
- "arbitrary-int",
- "clap",
- "crc",
-]
-
-[[package]]
 name = "heck"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -139,6 +130,15 @@ name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6cb138bb79a146c1bd460005623e142ef0181e3d0219cb493e02f7d08a35695"
+
+[[package]]
+name = "navilens_code"
+version = "0.1.1"
+dependencies = [
+ "arbitrary-int",
+ "clap",
+ "crc",
+]
 
 [[package]]
 name = "once_cell_polyfill"
