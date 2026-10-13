@@ -1,7 +1,10 @@
 [package]
-name = "crc_test"
+name = "navilens_code"
 version = "0.1.1"
 edition = "2024"
+
+authors = ["Owain Cleaver"]
+license = "MIT"
 
 [dependencies]
 arbitrary-int = { version = "2.2.0" }
